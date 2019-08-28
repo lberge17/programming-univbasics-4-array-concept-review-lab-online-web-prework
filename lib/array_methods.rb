@@ -1,8 +1,11 @@
 def find_element_index(array, value_to_find)
-  while array[index] do |index|
+  index = 0
+  while array[index] do
     if array[index] == value_to_find {
-      p index
-    } 
+      return index
+    } else {
+      index += 1
+    }
   end
 end
 
